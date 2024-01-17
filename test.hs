@@ -5,16 +5,16 @@ type Row a = [a]
 type Value = Char 
 --equivalent to type Grid = [[Char]]
 --input of sudou
-minimal               :: Grid
-minimal               =  [".98......",
-                           "....7....",
-                           "....15...",
-                           "1........",
-                           "...2....9",
-                           "...9.6.82",
-                           ".......3.",
-                           "5.1......",
-                           "...4...2."]
+minimal:: Grid
+minimal =  [".98......",
+            "....7....",
+            "....15...",
+            "1........",
+            "...2....9",
+            "...9.6.82",
+            ".......3.",
+            "5.1......",
+            "...4...2."]
 
 --validity check of Sudoku(no repetition of numbers in rows or columns)
 rows :: Matrix a -> [Row a]
